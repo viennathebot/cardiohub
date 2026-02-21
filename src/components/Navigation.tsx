@@ -58,6 +58,9 @@ export default function Navigation() {
               )}
             </div>
 
+            <Link href="/trials" className="text-slate-600 hover:text-slate-900 font-medium">
+              Landmark Trials
+            </Link>
             <Link href="/cases" className="text-slate-600 hover:text-slate-900 font-medium">
               Cases
             </Link>
@@ -98,6 +101,7 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="border-t border-slate-200 pt-3 mt-3">
+              <Link href="/trials" className="block py-2 text-slate-700">Landmark Trials</Link>
               <Link href="/cases" className="block py-2 text-slate-700">Cases</Link>
               <Link href="/blog" className="block py-2 text-slate-700">Blog</Link>
               <Link href="/about" className="block py-2 text-slate-700">About</Link>

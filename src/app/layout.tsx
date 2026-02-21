@@ -41,6 +41,7 @@ export default function RootLayout({
               <div>
                 <h4 className="font-medium mb-3">Resources</h4>
                 <ul className="space-y-2 text-sm text-slate-400">
+                  <li><a href="/trials" className="hover:text-white">Landmark Trials</a></li>
                   <li><a href="/cases" className="hover:text-white">Case Discussions</a></li>
                   <li><a href="/blog" className="hover:text-white">Blog</a></li>
                   <li><a href="/about" className="hover:text-white">About</a></li>

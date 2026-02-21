@@ -9,7 +9,8 @@ import {
   Users,
   PlayCircle,
   ArrowRight,
-  GraduationCap
+  GraduationCap,
+  FlaskConical
 } from 'lucide-react'
 
 const specialties = [
@@ -228,6 +229,50 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Landmark Trials Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-12 text-white">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-4">
+                  <FlaskConical className="h-6 w-6 text-cardiac-400" />
+                  <span className="text-cardiac-400 font-medium">Evidence-Based</span>
+                </div>
+                <h2 className="text-3xl font-bold mb-4">Landmark Trials Database</h2>
+                <p className="text-xl text-slate-300 mb-6">
+                  Comprehensive summaries of the most important trials in cardiology. 
+                  PARADIGM-HF, COAPT, ISCHEMIA, PARTNER, and more — with design, results, 
+                  and clinical impact.
+                </p>
+                <Link href="/trials" className="inline-flex items-center gap-2 bg-cardiac-500 hover:bg-cardiac-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors">
+                  Explore Trials
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-center">
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-3xl font-bold text-cardiac-400">15+</div>
+                  <div className="text-slate-400">Trials</div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-3xl font-bold text-cardiac-400">8</div>
+                  <div className="text-slate-400">Categories</div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-3xl font-bold text-cardiac-400">NNT</div>
+                  <div className="text-slate-400">Calculated</div>
+                </div>
+                <div className="bg-white/10 rounded-xl p-4">
+                  <div className="text-3xl font-bold text-cardiac-400">✓</div>
+                  <div className="text-slate-400">Board-Ready</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
